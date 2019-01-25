@@ -370,7 +370,7 @@ class QRemoteDesktop(QtWidgets.QWidget):
         @param height: {int} height of widget
         """
         self._buffer = QtGui.QImage(width, height, QtGui.QImage.Format_RGB32)
-        QtGui.QWidget.resize(self, width, height)
+        QtWidgets.QWidget.resize(self, width, height)
         
     def paintEvent(self, e):
         """
